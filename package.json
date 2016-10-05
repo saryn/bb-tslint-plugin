@@ -1,6 +1,6 @@
 {
   "name": "bb-tslint-plugin",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Plugin for bobril-build which copies tslint.json to project root",
   "main": "dist/index.js",
   "typings": "src/index.ts",
