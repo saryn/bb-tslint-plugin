@@ -58,6 +58,7 @@
         "triple-equals": true,
         "typedef": [
             true,
+            "call-signature",
             "property-declaration",
             "member-variable-declaration"
         ],
@@ -68,7 +69,8 @@
             true,
             "allow-leading-underscore",
             "allow-pascal-case"
-        ]
+        ],
+        "prefer-const": true
     }
 }
 
