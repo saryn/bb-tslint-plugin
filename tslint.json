@@ -7,7 +7,7 @@
             true,
             "check-space"
         ],
-        "curly": false,
+        "curly": true,
         "eofline": false,
         "forin": false,
         "interface-name": [
