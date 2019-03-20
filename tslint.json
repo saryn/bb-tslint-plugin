@@ -28,6 +28,7 @@
                 ]
             }
         ],
+        "member-access": [true, "no-public"],
         "no-any": true,
         "no-arg": true,
         "no-bitwise": false,
