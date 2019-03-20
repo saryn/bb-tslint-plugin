@@ -1,6 +1,6 @@
 {
   "name": "bb-tslint-plugin",
-  "version": "1.2.0",
+  "version": "1.2.1",
   "description": "Plugin for bobril-build which copies tslint.json to project root",
   "main": "dist/index.js",
   "typings": "src/index.ts",
@@ -8,8 +8,5 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Martin Šára",
-  "license": "ISC",
-  "dependencies": {
-    "commander": "^2.9.0"
-  }
+  "license": "ISC"
 }
