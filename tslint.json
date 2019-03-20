@@ -59,8 +59,7 @@
         "typedef": [
             true,
             "call-signature",
-            "property-declaration",
-            "member-variable-declaration"
+            "property-declaration"
         ],
         "use-strict": [
             false
