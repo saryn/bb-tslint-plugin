@@ -1,21 +1,27 @@
-import * as fs from 'fs';
-import * as path from 'path';
-import * as commander from 'commander';
+import * as fs from "fs";
+import * as path from "path";
+import * as commander from "commander";
 
 export function afterStartCompileProcess(project) {
-    console.log('bb-tslint-plugin: copying tslint.json');
+  console.log("bb-tslint-plugin: copying tslint.json");
 
-    let src = path.join(__dirname, '..', 'tslint.json');
-    let dest = path.join(project.dir, 'tslint.json');
+  const src = path.join(__dirname, "..", "tslint.json");
+  const dest = path.join(project.dir, "tslint.json");
 
-    fs.readFile(src, (error, data) => {
-        if (error) return console.error(error);
-        fs.writeFile(dest, data, (error) => {
-            if (error) return console.error(error);
-        });
+  fs.readFile(src, (readError, data) => {
+    if (readError) {
+      return console.error(readError);
+    }
+    fs.writeFile(dest, data, writeError => {
+      if (writeError) {
+        return console.error(writeError);
+      }
     });
+  });
 }
 
-export function registerCommands(c: commander.ICommand, bb: any, consumeCommand: Function) {
-
-}
+export function registerCommands(
+  c: commander.ICommand,
+  bb: any,
+  consumeCommand: Function
+) {}
