@@ -47,6 +47,7 @@
         "no-shadowed-variable": true,
         "no-empty": true,
         "no-eval": true,
+        "no-floating-promises": true,
         "no-require-imports": false,
         "no-string-literal": false,
         "no-switch-case-fall-through": true,
